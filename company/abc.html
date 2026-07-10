@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+            background-color: blue;
+            font-size: 65px;
+            color: white;
+            position: relative;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-timing-function: infinite;
+        }
+
+        @keyframes box {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+                transform: rotate(0deg);
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+                transform: rotate(-360deg);
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+            }
+        }
+
+        span {
+            display: block;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>box</div>
+    <div>box</div>
+    <div>box</div>
+    <div>box</div>
+    <div>box</div>
+    <div>
+        this is a 
+    </div>
+    
+</body>
+
+</html>
